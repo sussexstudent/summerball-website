@@ -1,0 +1,151 @@
+body, html {
+	width: 100%;
+	min-height: 100%;
+	margin: 0px;
+}
+
+body {
+  background: linear-gradient(to bottom, #466dfb 0%,#b8cbf3 100%);
+  BBackground: #fbbc5a;
+  font-family: -apple-system, BlinkMacSystemFont, 
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", 
+    "Fira Sans", "Droid Sans", "Helvetica Neue", 
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: bold;
+}
+
+#title {
+	margin: auto;
+}
+
+#mainimage {
+	width: 50%;
+	margin-left: 25%;
+	border-radius: 15px;
+	padding: 5px;
+	margin-bottom: 25px;
+	float: left;
+}
+
+.Container {
+  padding-top: 2rem;
+	max-width: 960px;
+	margin: auto;
+}
+
+#imagecontainer {
+	float: left;
+}
+
+button {
+	float: left;
+	width: 30%;
+	height: 29px;
+	background-color: #6A65DB;
+	font-size: 18px;
+	color: white;
+}
+
+button:hover {
+	background-color: #4641B5;
+}
+
+.Tickets {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Tickets li {
+  flex: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.Tickets a {
+  display: block;
+  text-align: center;
+  padding: 1rem 0.5rem;
+  bBBackground: #6A65DB;
+  background: #71dcc7;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#sus {
+	margin-left: 2.5%;
+}
+
+#bright {
+	margin-left: 2.5%;
+}
+
+#normal {
+	margin-left: 2.5%;
+}
+
+.UnionBranding {
+  display: flex;
+	margin-top: 100px;
+	margin-bottom: 50px;
+  justify-content: center;
+}
+
+.UnionBranding div {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#sussexlogo {
+	width: 23%;
+}
+
+.Copy {
+	max-width: 600px;
+	margin: auto;
+	margin-bottom: 50px;
+	text-align: center;
+	color: white;
+	line-height: 1.5;
+}
+
+#hashtag {
+	width: 100%;
+	text-align: center;
+	float: left;
+	color: white;
+}
+
+@media only screen and (max-width:870px) {
+	button {
+		float: left;
+		width: 80%;
+		height: 29px;
+		background-color: #6A65DB;
+		font-size: 18px;
+		color: white;
+	}
+
+	#mainimage {
+		width: 70%;
+		margin-left: 15%;
+	}
+
+	#sus {
+		margin-left: 10%;
+	}
+
+	#bright {
+		margin-left: 10%;
+		margin-top: 20px;
+	}
+
+	#normal {
+		margin-left: 10%;
+		margin-top: 20px;
+	}
+}
