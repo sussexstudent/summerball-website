@@ -23,13 +23,13 @@
 		<h2>Get tickets</h2>
 		<ul class="Tickets">
 			<li>
-				<a href="https://www.universe.com/events/summer-ball-brighton-2017-tickets-K9QB05">Sussex Students</a>
+				<a href="https://www.universe.com/events/summer-ball-brighton-2017-tickets-K9QB05" onclick="trackOutboundLink('https://www.universe.com/events/summer-ball-brighton-2017-tickets-K9QB05?c=sussex'); return false;">Sussex Students</a>
 			</li>
 			<li>
-				<a href="https://www.brightonsu.com/summerball">Brighton Students</a>
+				<a href="https://www.brightonsu.com/summerball" onclick="trackOutboundLink('https://www.brightonsu.com/summerball'); return false;">Brighton Students</a>
 			</li>
 			<li>
-				<a href="https://www.universe.com/events/summer-ball-brighton-2017-tickets-K9QB05">Standard</a>
+				<a href="https://www.universe.com/events/summer-ball-brighton-2017-tickets-K9QB05" onclick="trackOutboundLink('https://www.universe.com/events/summer-ball-brighton-2017-tickets-K9QB05?c=standard'); return false;" >Standard</a>
 			</li>
 		</ul>
 		<div class="Hashtag">
@@ -53,6 +53,13 @@
 
   ga('create', 'UA-93359077-1', 'auto');
   ga('send', 'pageview');
+
+	var trackOutboundLink = function(url) {
+   ga('send', 'event', 'outbound', 'click', url, {
+     'transport': 'beacon',
+     'hitCallback': function(){document.location = url;}
+   });
+}
 </script>
 </body>
 </html>
