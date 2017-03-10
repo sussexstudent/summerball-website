@@ -6,50 +6,33 @@ body, html {
 
 body {
   background: linear-gradient(to bottom, #466dfb 0%,#b8cbf3 100%);
-  BBackground: #fbbc5a;
   font-family: -apple-system, BlinkMacSystemFont, 
     "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", 
     "Fira Sans", "Droid Sans", "Helvetica Neue", 
     sans-serif;
+  color: #ffffff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: bold;
 }
 
-#title {
-	margin: auto;
+.Logo {
+	margin-bottom: 25px;
 }
 
-#mainimage {
-	width: 50%;
-	margin-left: 25%;
-	border-radius: 15px;
-	padding: 5px;
-	margin-bottom: 25px;
-	float: left;
+.Logo img {
+  max-width: 500px;
+	width: 100%;
+  display: block;
+  margin: 0 auto;
 }
 
 .Container {
   padding-top: 2rem;
-	max-width: 960px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+	max-width: 600px;
 	margin: auto;
-}
-
-#imagecontainer {
-	float: left;
-}
-
-button {
-	float: left;
-	width: 30%;
-	height: 29px;
-	background-color: #6A65DB;
-	font-size: 18px;
-	color: white;
-}
-
-button:hover {
-	background-color: #4641B5;
 }
 
 .Tickets {
@@ -57,12 +40,17 @@ button:hover {
   list-style: none;
   padding: 0;
   margin: 0;
+	justify-content: space-between;
+	flex-direction: column;
 }
 
 .Tickets li {
   flex: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+	margin-bottom: 1rem;
+ }
+
+.Tickets li:first-child {
+	padding-left: 0;
 }
 
 .Tickets a {
@@ -76,36 +64,22 @@ button:hover {
   font-weight: bold;
 }
 
-#sus {
-	margin-left: 2.5%;
-}
-
-#bright {
-	margin-left: 2.5%;
-}
-
-#normal {
-	margin-left: 2.5%;
-}
-
 .UnionBranding {
   display: flex;
 	margin-top: 100px;
 	margin-bottom: 50px;
   justify-content: center;
+	flex-direction: column;
 }
 
 .UnionBranding div {
   padding-left: 1rem;
   padding-right: 1rem;
-}
-
-#sussexlogo {
-	width: 23%;
+	margin-bottom: 1rem;
+	text-align: center;
 }
 
 .Copy {
-	max-width: 600px;
 	margin: auto;
 	margin-bottom: 50px;
 	text-align: center;
@@ -113,39 +87,25 @@ button:hover {
 	line-height: 1.5;
 }
 
-#hashtag {
+.Hashtag {
 	width: 100%;
 	text-align: center;
 	float: left;
-	color: white;
+	color: #ffffff;
 }
 
-@media only screen and (max-width:870px) {
-	button {
-		float: left;
-		width: 80%;
-		height: 29px;
-		background-color: #6A65DB;
-		font-size: 18px;
-		color: white;
+
+@media screen and (min-width: 600px) {
+	.Tickets {
+		flex-direction: row;
 	}
 
-	#mainimage {
-		width: 70%;
-		margin-left: 15%;
+	.Tickets li {
+		padding-left: 1rem;
+	  padding-right: 1rem;
 	}
 
-	#sus {
-		margin-left: 10%;
-	}
-
-	#bright {
-		margin-left: 10%;
-		margin-top: 20px;
-	}
-
-	#normal {
-		margin-left: 10%;
-		margin-top: 20px;
+	.UnionBranding {
+		flex-direction: row;
 	}
 }
