@@ -57,11 +57,14 @@ body {
   display: block;
   text-align: center;
   padding: 1rem 0.5rem;
-  bBBackground: #6A65DB;
   background: #71dcc7;
   color: #ffffff;
   text-decoration: none;
   font-weight: bold;
+}
+
+.Tickets a:hover {
+  background: #63d1bc;
 }
 
 .UnionBranding {
